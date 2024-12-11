@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemple EJS</title>
+</head>
+<body>
+  <h1>Bienvenue sur ma page EJS</h1>
+  <p>Ceci est une page générée dynamiquement à l'aide de EJS.</p>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageName %></title>
+</head>
+<body>
+    <header>
+        <h1><%= pageTitle %></h1>
+    </header>
+    <main>
+        <p>Bienvenue sur la page <%= pageName %> !</p>
+    </main>
+    <footer>
+        <p>© 2024 - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
+ -->
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <header>
+        <h1><%= pageTitle %></h1>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/about">À propos</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Bienvenue sur la page <%= pageName %> !</p>
+    </main>
+    <footer>
+        <p>© 2024 - Tous droits réservés</p>
+    </footer>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <!-- Inclure le header -->
+    <%- include('partials/header') %>
+
+    <main>
+        <p>Bienvenue sur la page <%= pageName %> !</p>
+    </main>
+
+    <!-- Inclure le footer -->
+    <%- include('partials/footer') %>
+</body>
+</html>
+
+
